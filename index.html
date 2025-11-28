@@ -39,7 +39,7 @@
       }
     </script>
     <style>
-      body { font-family: 'Lato', sans-serif; color: #5D5D5D; background-color: #F9F7F2; padding-top: 40px; } /* padding-top for urgency bar */
+      body { font-family: 'Lato', sans-serif; color: #5D5D5D; background-color: #F9F7F2; padding-top: 40px; }
       h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
       .smooth-scroll { scroll-behavior: smooth; }
       
@@ -68,7 +68,7 @@
 <body class="smooth-scroll">
 
     <!-- URGENCY BAR -->
-    <div id="urgency-bar" class="fixed top-0 left-0 w-full bg-red-600 text-white py-2 px-4 z-[60] shadow-md flex justify-center items-center gap-2 text-sm md:text-base font-bold">
+    <div id="urgency-bar" class="fixed top-0 left-0 w-full bg-red-600 text-white py-2 px-4 z-[60] shadow-md flex justify-center items-center gap-2 text-sm md:text-base font-bold animate-pulse">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         <span>OFERTA RELÂMPAGO: O preço sobe em <span id="countdown">15:00</span></span>
     </div>
@@ -79,7 +79,7 @@
             <!-- Text -->
             <div class="flex flex-col gap-6 text-center md:text-left order-2 md:order-1">
                 <div class="flex items-center justify-center md:justify-start gap-2 text-brand-oliveDark font-medium tracking-wide uppercase text-sm">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
                     <span>Para mães de bebês de 0 a 3 anos</span>
                 </div>
                 
@@ -99,9 +99,7 @@
                         Quero noites tranquilas
                     </a>
                     <p class="text-sm text-brand-text opacity-80 mt-2 sm:mt-0 sm:ml-4 flex flex-col sm:flex-row items-center gap-1">
-                        <span class="flex text-yellow-500">
-                           ★★★★★
-                        </span>
+                        <span class="flex text-yellow-500">★★★★★</span>
                         <span>+1.000 famílias ajudadas</span>
                     </p>
                 </div>
@@ -249,22 +247,92 @@
             </div>
         </div>
     </section>
-    
+
+    <!-- METHODS -->
+    <section class="py-16 px-4 bg-brand-rose/10">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-serif text-brand-dark mb-6">
+          Cada bebê é único, <br/> <span class="italic text-brand-roseDark">assim como cada mãe.</span>
+        </h2>
+        <p class="text-lg text-brand-text mb-10 leading-relaxed">
+          Não acreditamos em fórmulas mágicas únicas. Por isso, este ebook apresenta diversas abordagens para que você encontre a que faz sentido para o seu coração e para o temperamento do seu filho.
+        </p>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white py-4 px-2 rounded-lg shadow-sm border border-brand-rose/20 flex items-center justify-center">
+                <span class="text-brand-dark font-medium text-sm md:text-base">Método Ferber</span>
+            </div>
+            <div class="bg-white py-4 px-2 rounded-lg shadow-sm border border-brand-rose/20 flex items-center justify-center">
+                <span class="text-brand-dark font-medium text-sm md:text-base">Pick Up / Put Down</span>
+            </div>
+            <div class="bg-white py-4 px-2 rounded-lg shadow-sm border border-brand-rose/20 flex items-center justify-center">
+                <span class="text-brand-dark font-medium text-sm md:text-base">Método da Cadeira</span>
+            </div>
+            <div class="bg-white py-4 px-2 rounded-lg shadow-sm border border-brand-rose/20 flex items-center justify-center">
+                <span class="text-brand-dark font-medium text-sm md:text-base">Método Pantley</span>
+            </div>
+        </div>
+        
+        <p class="mt-8 text-sm text-brand-text opacity-80">
+          Inclui tabelas progressivas e guias de intervenção para cada método.
+        </p>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="py-20 px-4 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl text-center font-serif text-brand-dark mb-12">
+          Histórias de noites transformadas
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-brand-cream p-8 rounded-2xl shadow-sm flex flex-col items-center text-center">
+              <div class="w-16 h-16 rounded-full overflow-hidden mb-4 border-2 border-brand-rose">
+                <img src="https://picsum.photos/id/64/100/100" alt="Juliana" class="w-full h-full object-cover" />
+              </div>
+              <div class="flex gap-1 mb-4 text-yellow-500">★★★★★</div>
+              <p class="text-brand-text text-sm mb-6 italic">"Eu achava que nunca mais ia dormir. Aplicamos a rotina sugerida no capítulo 3 e em uma semana o Theo parou de acordar de hora em hora."</p>
+              <h4 class="font-bold text-brand-dark">Juliana M.</h4>
+              <span class="text-xs text-brand-oliveDark font-medium">Mãe do Theo, 8 meses</span>
+            </div>
+            <div class="bg-brand-cream p-8 rounded-2xl shadow-sm flex flex-col items-center text-center">
+              <div class="w-16 h-16 rounded-full overflow-hidden mb-4 border-2 border-brand-rose">
+                <img src="https://picsum.photos/id/65/100/100" alt="Fernanda" class="w-full h-full object-cover" />
+              </div>
+              <div class="flex gap-1 mb-4 text-yellow-500">★★★★★</div>
+              <p class="text-brand-text text-sm mb-6 italic">"A transição para a cama estava um pesadelo. As dicas de 'conforto e segurança' mudaram tudo. O ebook é lindo, fácil de ler e muito acolhedor."</p>
+              <h4 class="font-bold text-brand-dark">Fernanda S.</h4>
+              <span class="text-xs text-brand-oliveDark font-medium">Mãe da Lara, 2 anos</span>
+            </div>
+            <div class="bg-brand-cream p-8 rounded-2xl shadow-sm flex flex-col items-center text-center">
+              <div class="w-16 h-16 rounded-full overflow-hidden mb-4 border-2 border-brand-rose">
+                <img src="https://picsum.photos/id/338/100/100" alt="Carla" class="w-full h-full object-cover" />
+              </div>
+              <div class="flex gap-1 mb-4 text-yellow-500">★★★★★</div>
+              <p class="text-brand-text text-sm mb-6 italic">"Direto ao ponto. Sem enrolação. Gostei muito da parte sobre o ambiente de sono e as janelas de sono por idade. Salvou minhas sonecas!"</p>
+              <h4 class="font-bold text-brand-dark">Carla R.</h4>
+              <span class="text-xs text-brand-oliveDark font-medium">Mãe de gêmeos, 5 meses</span>
+            </div>
+        </div>
+      </div>
+    </section>
+
     <!-- BONUS SECTION -->
     <section class="py-16 px-4 bg-white border-t border-brand-beige/30">
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-12">
            <span class="uppercase tracking-widest text-xs font-bold text-brand-roseDark mb-2 block">Bônus Exclusivos</span>
            <h2 class="text-3xl md:text-4xl font-serif text-brand-dark">Leve também estes presentes especiais</h2>
-           <p class="text-brand-text mt-4 max-w-2xl mx-auto">
-             Para tornar sua jornada ainda mais completa, preparamos dois materiais extras que vão transformar seu dia a dia.
+           <p className="text-brand-text mt-4 max-w-2xl mx-auto">
+             Para tornar sua jornada ainda mais completa, preparamos materiais extras que vão transformar seu dia a dia.
            </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <!-- Bonus 1 -->
-          <div class="bg-brand-cream border border-brand-beige rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-center hover:shadow-lg transition-all group">
-            <div class="w-full md:w-1/3 aspect-[3/4] bg-brand-rose/20 rounded-lg flex items-center justify-center relative overflow-hidden shadow-inner">
+          <div class="bg-brand-cream border border-brand-beige rounded-2xl p-6 flex flex-col gap-4 hover:shadow-lg transition-all group">
+            <div class="w-full aspect-[3/4] bg-brand-rose/20 rounded-lg flex items-center justify-center relative overflow-hidden shadow-inner group-hover:scale-105 transition-transform duration-300">
                <div class="absolute inset-2 border-2 border-white rounded-md flex flex-col items-center justify-center text-center p-2 bg-brand-roseDark/10">
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-roseDark mb-2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
                   <span class="font-serif font-bold text-brand-dark text-sm leading-tight">30 Atividades Incríveis</span>
@@ -273,36 +341,55 @@
             </div>
             <div class="flex-1 text-center md:text-left">
               <div class="inline-block px-3 py-1 bg-brand-rose text-white text-xs font-bold rounded-full mb-3 shadow-sm">Bônus #1</div>
-              <h3 class="text-xl font-bold text-brand-dark mb-2">30 Atividades para Fazer com seu Bebê</h3>
-              <p class="text-brand-text text-sm mb-4">
-                Fortaleça o vínculo e estimule o desenvolvimento motor e cognitivo de 0 a 24 meses. Brincadeiras simples que fazem a diferença no dia a dia.
+              <h3 class="text-xl font-bold text-brand-dark mb-2 leading-tight">30 Atividades para Fazer com seu Bebê</h3>
+              <p class="text-brand-text text-xs mb-4">
+                Fortaleça o vínculo e estimule o desenvolvimento motor e cognitivo. Brincadeiras simples que fazem a diferença.
               </p>
             </div>
           </div>
 
           <!-- Bonus 2 -->
-          <div class="bg-brand-cream border border-brand-beige rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-center hover:shadow-lg transition-all group">
-            <div class="w-full md:w-1/3 aspect-[3/4] bg-brand-olive/20 rounded-lg flex items-center justify-center relative overflow-hidden shadow-inner">
+          <div class="bg-brand-cream border border-brand-beige rounded-2xl p-6 flex flex-col gap-4 hover:shadow-lg transition-all group">
+            <div class="w-full aspect-[3/4] bg-brand-olive/20 rounded-lg flex items-center justify-center relative overflow-hidden shadow-inner group-hover:scale-105 transition-transform duration-300">
                <div class="absolute inset-2 border-2 border-white rounded-md flex flex-col items-center justify-center text-center p-2 bg-brand-oliveDark/10">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-oliveDark mb-2"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-oliveDark mb-2"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg>
                   <span class="font-serif font-bold text-brand-dark text-sm leading-tight">40 Receitas Irresistíveis</span>
                   <span class="text-[10px] uppercase mt-2 text-brand-text">Saudáveis</span>
                </div>
             </div>
             <div class="flex-1 text-center md:text-left">
               <div class="inline-block px-3 py-1 bg-brand-olive text-white text-xs font-bold rounded-full mb-3 shadow-sm">Bônus #2</div>
-              <h3 class="text-xl font-bold text-brand-dark mb-2">40 Receitas Saudáveis</h3>
-              <p class="text-brand-text text-sm mb-4">
-                Acabe com a seletividade alimentar! Receitas nutritivas, fáceis e deliciosas para introdução alimentar, almoços e lanches.
+              <h3 class="text-xl font-bold text-brand-dark mb-2 leading-tight">40 Receitas Saudáveis</h3>
+              <p class="text-brand-text text-xs mb-4">
+                Acabe com a seletividade! Receitas nutritivas, fáceis e deliciosas para introdução alimentar e lanches.
               </p>
             </div>
           </div>
+
+          <!-- Bonus 3 (NEW) -->
+          <div class="bg-brand-cream border border-brand-beige rounded-2xl p-6 flex flex-col gap-4 hover:shadow-lg transition-all group">
+            <div class="w-full aspect-[3/4] bg-purple-100 rounded-lg flex items-center justify-center relative overflow-hidden shadow-inner group-hover:scale-105 transition-transform duration-300">
+               <div class="absolute inset-2 border-2 border-white rounded-md flex flex-col items-center justify-center text-center p-2 bg-purple-200/50">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-purple-600 mb-2"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><path d="M8.5 8.5v.01"/><path d="M16 15.5v.01"/><path d="M12 12v.01"/></svg>
+                  <span class="font-serif font-bold text-brand-dark text-sm leading-tight">Os Primeiros Saltos</span>
+                  <span class="text-[10px] uppercase mt-2 text-brand-text">Guia 0-24 Meses</span>
+               </div>
+            </div>
+            <div class="flex-1 text-center md:text-left">
+              <div class="inline-block px-3 py-1 bg-purple-400 text-white text-xs font-bold rounded-full mb-3 shadow-sm">Bônus #3</div>
+              <h3 class="text-xl font-bold text-brand-dark mb-2 leading-tight">Guia Completo dos Saltos de Desenvolvimento</h3>
+              <p class="text-brand-text text-xs mb-4">
+                Seu bebê dormia bem e parou do nada? Entenda as "semanas mágicas", os picos de crescimento e saiba o que esperar em cada fase.
+              </p>
+            </div>
+          </div>
+
         </div>
         
         <div class="mt-12 p-6 bg-brand-beige/30 rounded-xl text-center border border-brand-beige max-w-2xl mx-auto">
              <div class="flex items-center justify-center gap-2 mb-2 text-brand-oliveDark">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"/><rect width="20" height="5" x="2" y="7"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
-                 <span class="font-bold uppercase tracking-wide text-sm">Valor Total dos Bônus: R$ 59,80</span>
+                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+                 <span class="font-bold uppercase tracking-wide text-sm">Valor Total dos Bônus: R$ 89,70</span>
              </div>
              <p class="text-xl font-serif text-brand-dark">
                  Levando o ebook hoje, você recebe tudo isso <span class="font-bold text-brand-roseDark">GRATUITAMENTE</span>.
@@ -311,96 +398,74 @@
       </div>
     </section>
 
-    <!-- TESTIMONIALS -->
-    <section class="py-20 px-4 bg-white">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl md:text-4xl text-center font-serif text-brand-dark mb-12">Histórias de noites transformadas</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- 1 -->
-                <div class="bg-brand-cream p-8 rounded-2xl shadow-sm flex flex-col items-center text-center">
-                    <img src="https://picsum.photos/id/64/100/100" alt="Mãe" class="w-16 h-16 rounded-full border-2 border-brand-rose mb-4 object-cover">
-                    <div class="flex gap-1 mb-4 text-yellow-500">★★★★★</div>
-                    <p class="text-brand-text text-sm mb-6 italic">"Eu achava que nunca mais ia dormir. Aplicamos a rotina e em uma semana meu bebê parou de acordar de hora em hora."</p>
-                    <h4 class="font-bold text-brand-dark">Juliana M.</h4>
-                </div>
-                <!-- 2 -->
-                <div class="bg-brand-cream p-8 rounded-2xl shadow-sm flex flex-col items-center text-center">
-                    <img src="https://picsum.photos/id/65/100/100" alt="Mãe" class="w-16 h-16 rounded-full border-2 border-brand-rose mb-4 object-cover">
-                    <div class="flex gap-1 mb-4 text-yellow-500">★★★★★</div>
-                    <p class="text-brand-text text-sm mb-6 italic">"A transição para a cama estava um pesadelo. As dicas de 'conforto e segurança' mudaram tudo. O ebook é lindo!"</p>
-                    <h4 class="font-bold text-brand-dark">Fernanda S.</h4>
-                </div>
-                <!-- 3 -->
-                <div class="bg-brand-cream p-8 rounded-2xl shadow-sm flex flex-col items-center text-center">
-                    <img src="https://picsum.photos/id/338/100/100" alt="Mãe" class="w-16 h-16 rounded-full border-2 border-brand-rose mb-4 object-cover">
-                    <div class="flex gap-1 mb-4 text-yellow-500">★★★★★</div>
-                    <p class="text-brand-text text-sm mb-6 italic">"Direto ao ponto. Sem enrolação. Gostei muito da parte sobre o ambiente de sono. Salvou minhas sonecas!"</p>
-                    <h4 class="font-bold text-brand-dark">Carla R.</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PRICING -->
+    <!-- PRICING SECTION -->
     <section id="pricing" class="py-20 px-4 bg-gradient-to-b from-brand-beige to-white">
-        <div class="max-w-4xl mx-auto">
-            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-brand-rose/20 grid grid-cols-1 md:grid-cols-2">
-                
-                <div class="p-8 md:p-12 bg-brand-cream flex flex-col justify-center">
-                    <span class="uppercase tracking-widest text-xs font-bold text-brand-roseDark mb-2">Oferta Especial e Acessível</span>
-                    <h2 class="text-3xl md:text-4xl font-serif text-brand-dark mb-4">Comece hoje a mudar suas noites</h2>
-                    
-                    <div class="flex items-baseline gap-2 mb-2">
-                        <span class="text-lg text-gray-400 line-through">R$ 97,00</span>
-                        <span class="text-4xl font-bold text-brand-oliveDark">R$ 26,47</span>
-                    </div>
-                    
-                    <div class="mb-6 p-3 bg-brand-rose/10 rounded-lg border border-brand-rose/20">
-                         <div class="flex gap-2 items-start">
-                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-roseDark mt-1 shrink-0"><path d="M19 14c1.49-1.28 3.6-1.28 5.14 0 .34.66.17 2.7-.8 4m-8.38 0c-1.49-1.28-3.6-1.28-5.14 0-.34.66-.17 2.7.8 4M19 4c1.49 1.28 3.6 1.28 5.14 0 .34-.66.17-2.7-.8-4m-8.38 0C13.47 1.28 11.36 1.28 9.82 0c-.34.66-.17 2.7.8 4"/><path d="M7.5 16.5c-1.5 1-4 1-6.5-1.5-1.5-1.5-1.5-4.5 1.5-5 3-.5 3.5 1 5.5 1.5 2 .5 2.5-1 4.5-2.5 2-1.5 4-2 6.5-.5 2 1 2.5 4 1 6.5-.5 1-2.5 1.5-4 1.5-2 0-3.5-1.5-5.5-1.5-3 0-3 3.5-5.5 3.5z"/></svg>
-                             <p class="text-xs text-brand-text leading-tight italic">
-                                <strong>Por que este valor?</strong> Sei como consultorias de sono são caras e inacessíveis. Passei por isso e decidi tornar este conhecimento acessível para todas as mamães.
-                             </p>
-                         </div>
-                    </div>
-    
-                    <p class="text-brand-text mb-8 text-sm">Acesso imediato ao ebook completo em PDF + Bônus exclusivos.</p>
-                    
-                    <!-- LINK DA HOTMART -->
-                    <a href="https://pay.hotmart.com/A103150582T" target="_blank" class="w-full py-4 bg-brand-rose hover:bg-brand-roseDark text-white font-bold rounded-lg shadow-md transition-colors text-lg mb-4 text-center block">
-                        Sim, eu quero dormir melhor!
-                    </a>
-                    
-                    <div class="flex items-center justify-center gap-2 text-xs text-gray-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                        <span>Pagamento 100% seguro</span>
-                    </div>
-                </div>
-    
-                <div class="p-8 md:p-12">
-                    <h3 class="font-bold text-brand-dark mb-6 text-lg">O que você recebe:</h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-center gap-3 text-brand-text text-sm"><span class="text-brand-olive">✓</span> Ebook Completo: Durma Bem, Mamãe e Bebê</li>
-                        <li class="flex items-center gap-3 text-brand-text text-sm"><span class="text-brand-olive">✓</span> Guia de Rotinas por Idade (0 a 3 anos)</li>
-                        <li class="flex items-center gap-3 text-brand-text text-sm"><span class="text-brand-olive">✓</span> Bônus: 30 Atividades Incríveis</li>
-                        <li class="flex items-center gap-3 text-brand-text text-sm"><span class="text-brand-olive">✓</span> Bônus: 40 Receitas Saudáveis</li>
-                        <li class="flex items-center gap-3 text-brand-text text-sm"><span class="text-brand-olive">✓</span> Passo a passo Método Ferber</li>
-                        <li class="flex items-center gap-3 text-brand-text text-sm"><span class="text-brand-olive">✓</span> Acesso vitalício ao material</li>
-                        <li class="flex items-center gap-3 text-brand-text text-sm"><span class="text-brand-olive">✓</span> Garantia de 7 dias</li>
-                    </ul>
-                    
-                    <div class="mt-8 pt-6 border-t border-gray-100">
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 bg-brand-rose/20 rounded-full flex items-center justify-center text-brand-roseDark font-bold text-xl">7</div>
-                            <div>
-                                <p class="font-bold text-brand-dark text-sm">Dias de Garantia</p>
-                                <p class="text-xs text-gray-500">Se não gostar, devolvemos seu dinheiro.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-brand-rose/20">
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            
+            <div class="p-8 md:p-12 bg-brand-cream flex flex-col justify-center">
+               <span class="uppercase tracking-widest text-xs font-bold text-brand-roseDark mb-2">Oferta Especial e Acessível</span>
+               <h2 class="text-3xl md:text-4xl font-serif text-brand-dark mb-4">Comece hoje a mudar suas noites</h2>
+               
+               <div class="flex items-baseline gap-2 mb-2">
+                 <span class="text-lg text-gray-400 line-through">R$ 97,00</span>
+                 <span class="text-4xl font-bold text-brand-oliveDark">R$ 26,47</span>
+               </div>
+               
+               <div class="mb-6 p-3 bg-brand-rose/10 rounded-lg border border-brand-rose/20">
+                 <div class="flex gap-2 items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-roseDark mt-1 shrink-0"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                    <p class="text-xs text-brand-text leading-tight italic">
+                      <strong>Por que este valor?</strong> Sei como consultorias de sono são caras e inacessíveis. Passei por isso e decidi tornar este conhecimento acessível para todas as mamães.
+                    </p>
+                 </div>
+               </div>
+
+               <p class="text-brand-text mb-8 text-sm">Acesso imediato ao ebook completo em PDF + 3 Bônus exclusivos.</p>
+               
+               <!-- ATENÇÃO: COLOQUE SEU LINK DA HOTMART AQUI EMBAIXO -->
+               <a 
+                 href="https://pay.hotmart.com/SEU_LINK_AQUI?checkoutMode=10"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="w-full py-4 bg-brand-rose hover:bg-brand-roseDark text-white font-bold rounded-lg shadow-md transition-colors text-lg mb-4 text-center block"
+               >
+                 Sim, eu quero dormir melhor!
+               </a>
+               
+               <div class="flex items-center justify-center gap-2 text-xs text-gray-500">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                 <span>Pagamento 100% seguro</span>
+               </div>
             </div>
+
+            <div class="p-8 md:p-12">
+              <h3 class="font-bold text-brand-dark mb-6 text-lg">O que você recebe:</h3>
+              <ul class="space-y-4">
+                  <li class="flex items-center gap-3 text-brand-text text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-olive shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Ebook Completo: Durma Bem, Mamãe e Bebê</li>
+                  <li class="flex items-center gap-3 text-brand-text text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-olive shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Guia de Rotinas por Idade (0 a 3 anos)</li>
+                  <li class="flex items-center gap-3 text-brand-text text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-olive shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Bônus 1: 30 Atividades Incríveis</li>
+                  <li class="flex items-center gap-3 text-brand-text text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-olive shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Bônus 2: 40 Receitas Saudáveis</li>
+                  <li class="flex items-center gap-3 text-brand-text text-sm font-bold text-brand-roseDark"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-olive shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Bônus 3: Guia dos Saltos de Desenvolvimento</li>
+                  <li class="flex items-center gap-3 text-brand-text text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-olive shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Passo a passo Método Ferber</li>
+                  <li class="flex items-center gap-3 text-brand-text text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-olive shrink-0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Garantia de 7 dias</li>
+              </ul>
+              
+              <div class="mt-8 pt-6 border-t border-gray-100">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-brand-rose/20 rounded-full flex items-center justify-center text-brand-roseDark font-bold text-xl">7</div>
+                    <div>
+                        <p class="font-bold text-brand-dark text-sm">Dias de Garantia</p>
+                        <p class="text-xs text-gray-500">Se não gostar, devolvemos seu dinheiro.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- FAQ -->
@@ -408,40 +473,37 @@
         <div class="max-w-3xl mx-auto">
             <h2 class="text-3xl font-serif text-center text-brand-dark mb-10">Perguntas Frequentes</h2>
             <div class="space-y-4">
-                <details class="border border-brand-beige rounded-lg overflow-hidden bg-brand-cream">
-                    <summary class="w-full flex justify-between items-center p-4 cursor-pointer font-medium text-brand-dark hover:bg-brand-beige/50">
-                        Para qual idade serve este guia?
-                        <span class="text-brand-rose">▼</span>
+                <details class="border border-brand-beige rounded-lg overflow-hidden group">
+                    <summary class="w-full flex justify-between items-center p-4 text-left bg-brand-cream hover:bg-brand-beige/50 transition-colors cursor-pointer">
+                        <span class="font-medium text-brand-dark">Para qual idade serve este guia?</span>
+                        <span class="text-brand-rose group-open:rotate-180 transition-transform">▼</span>
                     </summary>
                     <div class="p-4 bg-white text-brand-text text-sm leading-relaxed border-t border-brand-beige">
                         O ebook abrange estratégias e rotinas detalhadas para bebês de 0 meses até crianças de 3 anos de idade.
                     </div>
                 </details>
-
-                <details class="border border-brand-beige rounded-lg overflow-hidden bg-brand-cream">
-                    <summary class="w-full flex justify-between items-center p-4 cursor-pointer font-medium text-brand-dark hover:bg-brand-beige/50">
-                        Por que o valor é tão baixo?
-                        <span class="text-brand-rose">▼</span>
+                <details class="border border-brand-beige rounded-lg overflow-hidden group">
+                    <summary class="w-full flex justify-between items-center p-4 text-left bg-brand-cream hover:bg-brand-beige/50 transition-colors cursor-pointer">
+                        <span class="font-medium text-brand-dark">Por que o valor é tão baixo?</span>
+                        <span class="text-brand-rose group-open:rotate-180 transition-transform">▼</span>
                     </summary>
                     <div class="p-4 bg-white text-brand-text text-sm leading-relaxed border-t border-brand-beige">
                         Eu sofri muito com a privação de sono e, na época, as consultorias eram financeiramente inviáveis para mim. Minha missão é democratizar esse conhecimento para que nenhuma mãe precise passar pelo que passei por falta de recursos.
                     </div>
                 </details>
-
-                <details class="border border-brand-beige rounded-lg overflow-hidden bg-brand-cream">
-                    <summary class="w-full flex justify-between items-center p-4 cursor-pointer font-medium text-brand-dark hover:bg-brand-beige/50">
-                        Preciso deixar meu bebê chorando?
-                        <span class="text-brand-rose">▼</span>
+                <details class="border border-brand-beige rounded-lg overflow-hidden group">
+                    <summary class="w-full flex justify-between items-center p-4 text-left bg-brand-cream hover:bg-brand-beige/50 transition-colors cursor-pointer">
+                        <span class="font-medium text-brand-dark">Preciso deixar meu bebê chorando?</span>
+                        <span class="text-brand-rose group-open:rotate-180 transition-transform">▼</span>
                     </summary>
                     <div class="p-4 bg-white text-brand-text text-sm leading-relaxed border-t border-brand-beige">
                         Não necessariamente. Apresentamos diversos métodos, desde os mais gentis (sem choro) até métodos de espera controlada. Você escolhe o que melhor se adapta à sua filosofia.
                     </div>
                 </details>
-                
-                <details class="border border-brand-beige rounded-lg overflow-hidden bg-brand-cream">
-                    <summary class="w-full flex justify-between items-center p-4 cursor-pointer font-medium text-brand-dark hover:bg-brand-beige/50">
-                        Como recebo o ebook?
-                        <span class="text-brand-rose">▼</span>
+                <details class="border border-brand-beige rounded-lg overflow-hidden group">
+                    <summary class="w-full flex justify-between items-center p-4 text-left bg-brand-cream hover:bg-brand-beige/50 transition-colors cursor-pointer">
+                        <span class="font-medium text-brand-dark">Como recebo o ebook?</span>
+                        <span class="text-brand-rose group-open:rotate-180 transition-transform">▼</span>
                     </summary>
                     <div class="p-4 bg-white text-brand-text text-sm leading-relaxed border-t border-brand-beige">
                         Assim que o pagamento for confirmado, você receberá um e-mail com o link para baixar o arquivo PDF imediatamente.
@@ -451,32 +513,38 @@
         </div>
     </section>
 
-    <!-- LAST CHANCE SECTION -->
+    <!-- LAST CHANCE -->
     <section class="py-16 px-4 bg-brand-dark text-white text-center">
-      <div class="max-w-3xl mx-auto flex flex-col items-center gap-6">
-        <div class="bg-red-600 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-            Última Chamada
+        <div class="max-w-3xl mx-auto flex flex-col items-center gap-6">
+            <div class="bg-red-600 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+                Última Chamada
+            </div>
+            
+            <h2 class="text-3xl md:text-5xl font-serif text-white leading-tight">
+                Não deixe para depois.<br/>
+                <span class="text-brand-rose">Sua sanidade não tem preço.</span>
+            </h2>
+            
+            <p class="text-gray-300 text-lg">
+                Você pode continuar acordando 10 vezes por noite e se sentindo exausta, ou pode tomar uma decisão agora por apenas <span class="text-white font-bold">R$ 26,47</span>. O risco é todo nosso com a garantia de 7 dias.
+            </p>
+    
+            <!-- ATENÇÃO: COLOQUE SEU LINK DA HOTMART AQUI EMBAIXO TAMBÉM -->
+            <a 
+                href="https://pay.hotmart.com/SEU_LINK_AQUI?checkoutMode=10"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full md:w-auto px-10 py-5 bg-red-600 hover:bg-red-700 text-white font-bold rounded-full shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 text-xl flex flex-col items-center leading-none mt-4"
+            >
+                <span>QUERO DORMIR AGORA</span>
+                <span class="text-xs font-normal opacity-80 mt-1 uppercase tracking-wide">Acesso Imediato • Compra Segura</span>
+            </a>
         </div>
-        
-        <h2 class="text-3xl md:text-5xl font-serif text-white leading-tight">
-          Não deixe para depois.<br/>
-          <span class="text-brand-rose">Sua sanidade não tem preço.</span>
-        </h2>
-        
-        <p class="text-gray-300 text-lg">
-          Você pode continuar acordando 10 vezes por noite e se sentindo exausta, ou pode tomar uma decisão agora por apenas <span class="text-white font-bold">R$ 26,47</span>. O risco é todo nosso com a garantia de 7 dias.
-        </p>
-
-        <a href="https://pay.hotmart.com/A103150582T" target="_blank" class="w-full md:w-auto px-10 py-5 bg-red-600 hover:bg-red-700 text-white font-bold rounded-full shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 text-xl flex flex-col items-center leading-none mt-4">
-          <span>QUERO DORMIR AGORA</span>
-          <span class="text-xs font-normal opacity-80 mt-1 uppercase tracking-wide">Acesso Imediato • Compra Segura</span>
-        </a>
-      </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-brand-dark text-white py-10 px-4">
+    <footer class="bg-black text-white py-10 px-4 border-t border-gray-800">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="text-center md:text-left">
                 <h3 class="font-serif text-xl mb-2">Durma Bem, Mamãe e Bebê</h3>
@@ -488,43 +556,47 @@
         </div>
     </footer>
 
-    <!-- STICKY CTA (Mobile) -->
-    <div id="sticky-cta" class="fixed bottom-0 left-0 w-full p-4 bg-white border-t border-gray-200 shadow-xl md:hidden z-50 flex justify-between items-center gap-4 transition-transform duration-300 translate-y-full">
+    <!-- STICKY CTA MOBILE -->
+    <div id="sticky-cta" class="fixed bottom-0 left-0 w-full p-4 bg-white border-t border-gray-200 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] md:hidden z-50 flex justify-between items-center gap-4 transition-transform duration-300 translate-y-full">
         <div class="flex flex-col">
             <span class="text-xs text-gray-500 line-through">R$ 97,00</span>
             <span class="text-lg font-bold text-brand-oliveDark">R$ 26,47</span>
         </div>
-        <a href="https://pay.hotmart.com/A103150582T" target="_blank" class="flex-1 py-3 bg-brand-rose text-white font-bold rounded-lg shadow-sm text-center">
+        <!-- ATENÇÃO: COLOQUE SEU LINK DA HOTMART AQUI -->
+        <a 
+            href="https://pay.hotmart.com/SEU_LINK_AQUI?checkoutMode=10"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex-1 py-3 bg-brand-rose text-white font-bold rounded-lg shadow-sm text-center"
+        >
             Comprar Agora
         </a>
     </div>
 
+    <!-- SCRIPTS -->
     <script>
-        // Sticky CTA Script
-        const stickyCTA = document.getElementById('sticky-cta');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 600) {
-                stickyCTA.classList.remove('translate-y-full');
-            } else {
-                stickyCTA.classList.add('translate-y-full');
-            }
-        });
-
-        // Urgency Bar Countdown Script
+        // Countdown Timer Logic
         const countdownEl = document.getElementById('countdown');
         let timeLeft = 900; // 15 minutes in seconds
 
-        const timer = setInterval(() => {
-            if (timeLeft <= 0) {
-                clearInterval(timer);
-                countdownEl.innerText = "00:00";
-                return;
+        setInterval(() => {
+            if (timeLeft > 0) {
+                timeLeft--;
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                countdownEl.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
             }
-            timeLeft--;
-            const minutes = Math.floor(timeLeft / 60);
-            const seconds = timeLeft % 60;
-            countdownEl.innerText = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
         }, 1000);
+
+        // Sticky CTA Scroll Logic
+        const stickyCta = document.getElementById('sticky-cta');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                stickyCta.classList.remove('translate-y-full');
+            } else {
+                stickyCta.classList.add('translate-y-full');
+            }
+        });
     </script>
 </body>
 </html>

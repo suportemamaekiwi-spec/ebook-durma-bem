@@ -1,11 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Durma Bem, Mamãe e Bebê | Guia de Sono</title>
     <meta name="description" content="Desvendando os segredos para noites tranquilas e dias revigorantes na jornada da maternidade.">
     
+    <!-- ========================================== -->
+    <!-- ÁREA DE RASTREAMENTO (PIXELS)              -->
+    <!-- ========================================== -->
+
+    <!-- FACEBOOK PIXEL -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    // ATENÇÃO: Substitua 'SEU-ID-AQUI' pelo número do seu Pixel do Facebook
+    // fbq('init', 'SEU-ID-AQUI'); 
+    // fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=SEU-ID-AQUI&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- FIM FACEBOOK PIXEL -->
+
+    <!-- GOOGLE TAG (GTM ou GA4) -->
+    <!-- Cole seu script do Google aqui -->
+    <!-- ========================================== -->
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,9 +69,8 @@
     <style>
       body { font-family: 'Lato', sans-serif; color: #5D5D5D; background-color: #F9F7F2; padding-top: 40px; }
       h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
-      .smooth-scroll { scroll-behavior: smooth; }
       
-      /* Accordion Styles */
+      /* Accordion Animation */
       details > summary { list-style: none; }
       details > summary::-webkit-details-marker { display: none; }
       details[open] summary ~ * { animation: sweep .5s ease-in-out; }
@@ -58,9 +85,7 @@
     "react": "https://aistudiocdn.com/react@^19.2.0",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
     "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
-    "vite": "https://aistudiocdn.com/vite@^7.2.4",
-    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
   }
 }
 </script>
@@ -68,9 +93,9 @@
 <body class="smooth-scroll">
 
     <!-- URGENCY BAR -->
-    <div id="urgency-bar" class="fixed top-0 left-0 w-full bg-red-600 text-white py-2 px-4 z-[60] shadow-md flex justify-center items-center gap-2 text-sm md:text-base font-bold animate-pulse">
+    <div id="urgency-bar" class="fixed top-0 left-0 w-full bg-red-600 text-white py-2 px-4 z-[60] shadow-md flex justify-center items-center gap-2 text-sm md:text-base font-bold animate-pulse text-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        <span>OFERTA RELÂMPAGO: O preço sobe em <span id="countdown">15:00</span></span>
+        <span>OFERTA RELÂMPAGO: O preço sobe em <span id="countdown" class="tabular-nums inline-block min-w-[3.5rem] text-left">15:00</span></span>
     </div>
 
     <!-- HERO SECTION -->
@@ -279,7 +304,7 @@
       </div>
     </section>
 
-    <!-- TESTIMONIALS -->
+    <!-- TESTIMONIALS (COM FOTOS REAIS) -->
     <section class="py-20 px-4 bg-white">
       <div class="max-w-6xl mx-auto">
         <h2 class="text-3xl md:text-4xl text-center font-serif text-brand-dark mb-12">
@@ -288,8 +313,9 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="bg-brand-cream p-8 rounded-2xl shadow-sm flex flex-col items-center text-center">
-              <div class="w-16 h-16 rounded-full overflow-hidden mb-4 border-2 border-brand-rose">
-                <img src="https://picsum.photos/id/64/100/100" alt="Juliana" class="w-full h-full object-cover" />
+              <div class="w-20 h-20 rounded-full overflow-hidden mb-4 border-2 border-brand-rose shadow-md">
+                <!-- FOTO REAL -->
+                <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?q=80&w=200&auto=format&fit=crop" alt="Juliana" class="w-full h-full object-cover" />
               </div>
               <div class="flex gap-1 mb-4 text-yellow-500">★★★★★</div>
               <p class="text-brand-text text-sm mb-6 italic">"Eu achava que nunca mais ia dormir. Aplicamos a rotina sugerida no capítulo 3 e em uma semana o Theo parou de acordar de hora em hora."</p>
@@ -297,8 +323,9 @@
               <span class="text-xs text-brand-oliveDark font-medium">Mãe do Theo, 8 meses</span>
             </div>
             <div class="bg-brand-cream p-8 rounded-2xl shadow-sm flex flex-col items-center text-center">
-              <div class="w-16 h-16 rounded-full overflow-hidden mb-4 border-2 border-brand-rose">
-                <img src="https://picsum.photos/id/65/100/100" alt="Fernanda" class="w-full h-full object-cover" />
+              <div class="w-20 h-20 rounded-full overflow-hidden mb-4 border-2 border-brand-rose shadow-md">
+                <!-- FOTO REAL -->
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop" alt="Fernanda" class="w-full h-full object-cover" />
               </div>
               <div class="flex gap-1 mb-4 text-yellow-500">★★★★★</div>
               <p class="text-brand-text text-sm mb-6 italic">"A transição para a cama estava um pesadelo. As dicas de 'conforto e segurança' mudaram tudo. O ebook é lindo, fácil de ler e muito acolhedor."</p>
@@ -306,8 +333,9 @@
               <span class="text-xs text-brand-oliveDark font-medium">Mãe da Lara, 2 anos</span>
             </div>
             <div class="bg-brand-cream p-8 rounded-2xl shadow-sm flex flex-col items-center text-center">
-              <div class="w-16 h-16 rounded-full overflow-hidden mb-4 border-2 border-brand-rose">
-                <img src="https://picsum.photos/id/338/100/100" alt="Carla" class="w-full h-full object-cover" />
+              <div class="w-20 h-20 rounded-full overflow-hidden mb-4 border-2 border-brand-rose shadow-md">
+                <!-- FOTO REAL -->
+                <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?q=80&w=200&auto=format&fit=crop" alt="Carla" class="w-full h-full object-cover" />
               </div>
               <div class="flex gap-1 mb-4 text-yellow-500">★★★★★</div>
               <p class="text-brand-text text-sm mb-6 italic">"Direto ao ponto. Sem enrolação. Gostei muito da parte sobre o ambiente de sono e as janelas de sono por idade. Salvou minhas sonecas!"</p>
@@ -324,7 +352,7 @@
         <div class="text-center mb-12">
            <span class="uppercase tracking-widest text-xs font-bold text-brand-roseDark mb-2 block">Bônus Exclusivos</span>
            <h2 class="text-3xl md:text-4xl font-serif text-brand-dark">Leve também estes presentes especiais</h2>
-           <p className="text-brand-text mt-4 max-w-2xl mx-auto">
+           <p class="text-brand-text mt-4 max-w-2xl mx-auto">
              Para tornar sua jornada ainda mais completa, preparamos materiais extras que vão transformar seu dia a dia.
            </p>
         </div>
@@ -573,22 +601,58 @@
         </a>
     </div>
 
-    <!-- SCRIPTS -->
+    <!-- SCRIPTS DE COMPORTAMENTO (URGÊNCIA E SCROLL) -->
     <script>
-        // Countdown Timer Logic
-        const countdownEl = document.getElementById('countdown');
-        let timeLeft = 900; // 15 minutes in seconds
+        // === LÓGICA DO TIMER DE URGÊNCIA COM MEMÓRIA ===
+        (function() {
+            const countdownEl = document.getElementById('countdown');
+            const urgencyBar = document.getElementById('urgency-bar');
+            
+            // Configuração
+            const DURATION_SECONDS = 900; // 15 minutos
+            const STORAGE_KEY = 'durmabem_offer_timer_v1';
+            
+            function now() { return Math.floor(Date.now() / 1000); }
+            
+            // Tenta recuperar do localStorage
+            let endTime = localStorage.getItem(STORAGE_KEY);
+            
+            if (endTime) {
+                endTime = parseInt(endTime, 10);
+                // Se o tempo expirou há mais de 24h, reseta para dar nova chance (remarketing)
+                if (endTime < now() - 86400) {
+                     endTime = now() + DURATION_SECONDS;
+                     localStorage.setItem(STORAGE_KEY, endTime);
+                }
+            } else {
+                // Primeira visita
+                endTime = now() + DURATION_SECONDS;
+                localStorage.setItem(STORAGE_KEY, endTime);
+            }
 
-        setInterval(() => {
-            if (timeLeft > 0) {
-                timeLeft--;
+            function updateTimer() {
+                const currentTime = now();
+                let timeLeft = endTime - currentTime;
+
+                if (timeLeft <= 0) {
+                    timeLeft = 0;
+                    countdownEl.innerHTML = "00:00";
+                    urgencyBar.classList.replace('bg-red-600', 'bg-gray-800');
+                    urgencyBar.innerHTML = "<span>OFERTA EXPIRADA: O valor promocional pode ser encerrado a qualquer momento.</span>";
+                    return; // Para o timer
+                }
+
                 const minutes = Math.floor(timeLeft / 60);
                 const seconds = timeLeft % 60;
                 countdownEl.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
             }
-        }, 1000);
 
-        // Sticky CTA Scroll Logic
+            // Inicia o timer
+            updateTimer();
+            setInterval(updateTimer, 1000);
+        })();
+
+        // === STICKY CTA SCROLL LOGIC ===
         const stickyCta = document.getElementById('sticky-cta');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 500) {
